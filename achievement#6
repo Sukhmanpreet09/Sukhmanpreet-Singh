@@ -1,0 +1,13 @@
+print("welcome ... this program helps in indentifying prime and composite numbers you will enter")
+my_list=(input("enter any number of integers seperated with comma: "))
+(mylist)=my_list
+print("Your List is : ", mylist) 
+print("Prime numbers in your list is/are : ") 
+for num in mylist: 
+ # As 1 is not a prime number 
+ if num > 1: 
+   for i in range(2,num): 
+     if (num % i) == 0: 
+       break 
+   else: 
+     print(num) 
