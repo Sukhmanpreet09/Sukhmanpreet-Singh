@@ -1,0 +1,32 @@
+#unit convertor
+
+# enter the unit you want to convert
+conversion=int(input("enter 1 for temperature and 2 for speed: "))
+#if you want you convert temperature
+if conversion==1:
+    def temperature():
+        
+        temp=int(input("enter the temperature number you want to convert: "))#enter the number
+        unit=input("enter the current unit used for the temperature: ")#enter the unit
+       
+        if unit =='c'or unit=="C":
+            a=("the temperature is {0} ")
+            print(a.format((temp * 9/5) + 32 ), "F")
+        elif unit =='f'or unit=="F":
+            a=("the temperature is {0} ")
+            print(a.format( 5/9*(temp-32)), "C")
+       
+    temperature() 
+elif conversion==2:
+    def speed():
+
+        speed=float(input("enter the speed number you want to convert: "))#enter the number
+        unit=input("enter the current unit used for the speed: ")#enter the unit
+       
+        if unit =='mph'or unit=="MPH":
+            a=("the speed is {0} ")
+            print(a.format((speed/1.609344) + 32 ), "KMH")
+        elif unit =='KMH'or unit=="kmh":
+            a=("the temperature is {0} ")
+            print(a.format(speed*1.609344), "MPH")
+    speed()        
