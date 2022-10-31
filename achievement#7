@@ -1,0 +1,13 @@
+name=input("enter your full name including first and last name: ")
+student_number=int(input("enter your student id: "))
+courses={"INFO1250" : "Computer fundamental",
+         "PROG1783" : "Computer programming",
+         "INFO5647" : "Network infrastructure"}
+print(courses)
+course_code=input ("enter the course code you want to register: ")
+a=print(course_code)
+x=courses.get(course_code)
+print(
+    "name", "=",name)
+print("student number","=", student_number)
+print( "courses","=",course_code, x)
